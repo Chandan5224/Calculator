@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="false"
+        android:gravity="right"
+        android:numeric="integer"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="40sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/zeroLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@id/secondLayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="C"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/modulo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="%"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/devide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="/"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@id/forthLayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Three"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addtion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@id/thirdLayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Seven"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Eight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Nine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Multiplication"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="X"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@id/firstLayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Four"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Five"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Six"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Subtraction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dott"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="."
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Equal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4A4747"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="handleClick"
+                android:text="="
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
